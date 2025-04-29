@@ -15,13 +15,7 @@ class Program
         foreach (char c in text)
         {
             int num = c - '0';
-            for(int i = 0; i < 10; i++)
-            {
-                if(num == i)
-                {
-                    result[i]++;
-                }
-            }
+            result[num]++;
         }
 
         foreach (int i in result)
